@@ -1,10 +1,16 @@
+using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class movimiento_carro : MonoBehaviour
 {
     [Header("General")]
-    [SerializeField] Camera MainCamera;
+    [SerializeField] GameObject ruedas;
+
 
     [Header("Movimiento")]
     [SerializeField] float velocidad = 2.0f;
@@ -26,27 +32,32 @@ public class movimiento_carro : MonoBehaviour
     void Start()
     {
         cController = GetComponent<CharacterController>();
-
+    
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        float currentSpeed = velocidad;
-
         Vector2 mVector = Move.action.ReadValue<Vector2>();
 
         float moviminetoVertical = mVector.y;
         float moviminetoHorizontal = mVector.x;
 
-        transform.Rotate(0, mVector.x * velocidadGiro * Time.deltaTime, 0);
-
-        if(Mathf.Abs(moviminetoVertical) > 0.01f)
+        if(Mathf.Abs(moviminetoHorizontal)> 0.01f)
         {
-            Vector3 movimiento = transform.forward * moviminetoVertical * velocidad;
+
+            foreach (Transform rueda in ruedas.GetComponentsInChildren<Transform>())
+            {
+                rueda.transform.Rotate(0,moviminetoHorizontal * Time.deltaTime, 0);
+            }
+        }
+
+        if (Mathf.Abs(moviminetoVertical) > 0.01f)
+        {
+            Vector3 movimiento = moviminetoVertical * velocidad * transform.forward;
+
             cController.Move(movimiento * Time.deltaTime);
             
         }
