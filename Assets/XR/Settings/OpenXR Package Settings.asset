@@ -1085,7 +1085,6 @@ MonoBehaviour:
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: Unity.XR.OpenXR.Editor::UnityEditor.XR.OpenXR.OpenXRPackageSettings
   Keys: 01000000070000000d000000
-  Keys: 01000000070000000d000000
   Values:
   - {fileID: -5437041782588951346}
   - {fileID: -3501836874656739362}
