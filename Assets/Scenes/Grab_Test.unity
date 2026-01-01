@@ -215,7 +215,7 @@ Transform:
   - {fileID: 894606746}
   - {fileID: 35172414}
   m_Father: {fileID: 7969375937542293804}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 26.224}
 --- !u!23 &95230839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -285,7 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1787df8551fc5d74fa93c933051135f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  wheelCenter: {fileID: 7969375937542293804}
   rotationReference: {fileID: 959043531}
+  epsilon: 0.0001
 --- !u!114 &98459629
 MonoBehaviour:
   m_ObjectHideFlags: 0
