@@ -64,7 +64,7 @@ public class movimiento_carro : MonoBehaviour
          * Como se reinician los grados, pasar de 0 a 359 de golpe toma tan solo -1 grados, lo que representa girar el volante a la izquierda
          * Por ello podemos pasar de 0 - 360 a -180 - 180 grados.
         */
-        float anguloCorrecto = Mathf.DeltaAngle(0f, volante.transform.eulerAngles.y);
+        float anguloCorrecto = Mathf.DeltaAngle(0f, volante.transform.localEulerAngles.y + 90f);
 
         /* 
          * En este caso aplicamos lo de DeltaAngle pero para el reinicio de grados de -180 a 180
@@ -83,13 +83,6 @@ public class movimiento_carro : MonoBehaviour
         */
         giroRuedas = Mathf.Clamp((anguloReal / relacion), -limite, limite);
 
-        //Se acutualiza el angulo anterior
-        if(anguloAnterior != anguloCorrecto)
-        {
-            // Debug.Log("Angulo Correcto: " + anguloCorrecto);
-            // Debug.Log("Angulo Real: " + anguloReal);
-            // Debug.Log("Giro Ruedas: " + giroRuedas);
-        }
         anguloAnterior = anguloCorrecto;
 
 
