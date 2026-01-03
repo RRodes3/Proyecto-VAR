@@ -74,7 +74,7 @@ public class movimiento_carro : MonoBehaviour
          * Clamp es solo para limitar el valor de la operacion, que no se pase de -360 o de 360
         */
         anguloReal += Mathf.Clamp(Mathf.DeltaAngle(anguloAnterior, anguloCorrecto), -360f, 360f);
-        
+
         /*
          * Segun google, hay un valor llamado steering ratio, que es la relacion de grados rotados por el volante con los grados rotados por las llantas
          * En este caso las relaciones para coches cotidianos van de 12:1 a 20:1 y la más común es de 16:1 (donde el 16 son los grados del volante y 1 el de las llantas)
