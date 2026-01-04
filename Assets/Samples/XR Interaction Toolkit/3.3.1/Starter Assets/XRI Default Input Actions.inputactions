@@ -453,6 +453,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Principal Derecho",
+                    "type": "Button",
+                    "id": "64541c6a-a1f9-4424-95e3-20b9edddbe50",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -860,6 +869,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0fdc42c-60c3-469e-963c-d342b40e5f41",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Principal Derecho",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

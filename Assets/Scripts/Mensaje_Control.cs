@@ -23,7 +23,6 @@ public class Mensaje_Control : MonoBehaviour
         canvas = GetComponentInChildren<Canvas>();
         texto = canvas.GetComponentInChildren<TextMeshProUGUI>();
         imagen = canvas.GetComponentInChildren<Image>();
-
         ConstruirMensaje();
     }
     private void ConstruirMensaje()
@@ -46,5 +45,19 @@ public class Mensaje_Control : MonoBehaviour
 
         texto.color = letra;
         texto.text = mensaje;
+
+        Ocultar();
+
+    }
+
+    public void Mostrar()
+    {
+        canvas.gameObject.SetActive(true);
+    }
+
+    public void Ocultar()
+    {
+        canvas.gameObject.SetActive(false);
+
     }
 }
