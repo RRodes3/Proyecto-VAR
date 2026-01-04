@@ -15,11 +15,13 @@ public class CustomWheelRotation : MonoBehaviour
     void Update() {
         if(rotationReference.parent != null) return; // Objeto no está agarrado
         
-        Vector3 OV = wheelCenter.transform.position;
+        Vector3 OV = wheelCenter.position;
         Vector3 OR = rotationReference.position;
         Vector3 VR = OR - OV;
 
-        float finalRot = Mathf.Atan2(VR.y, VR.x) * Mathf.Rad2Deg; // Entre -180 y 180 grados
+        VR = Vector3.ProjectOnPlane(VR, wheelCenter.forward); // Proyectamos al plano dado por el volante
+
+        float finalRot = Mathf.Atan2(Vector3.Dot(wheelCenter.up, VR), Vector3.Dot(wheelCenter.right, VR)) * Mathf.Rad2Deg; // Entre -180 y 180 grados
         finalRot = -finalRot; // Mi rotación local va al revés
         if(finalRot <= 0f) finalRot += 360f;
         if(finalRot >= 360f) finalRot -= 360f;
