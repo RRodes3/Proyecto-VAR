@@ -23,8 +23,8 @@ public class CustomWheelRotation : MonoBehaviour
 
         float finalRot = Mathf.Atan2(Vector3.Dot(wheelCenter.up, VR), Vector3.Dot(wheelCenter.right, VR)) * Mathf.Rad2Deg; // Entre -180 y 180 grados
         finalRot = -finalRot; // Mi rotación local va al revés
-        if(finalRot <= 0f) finalRot += 360f;
-        if(finalRot >= 360f) finalRot -= 360f;
+        if (finalRot <= 0f) finalRot += 360f;
+        if (finalRot >= 360f) finalRot -= 360f;
 
         transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, finalRot, transform.localEulerAngles.z);
     }
