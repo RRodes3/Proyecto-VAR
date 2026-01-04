@@ -46,6 +46,18 @@ public class Mensaje_Control : MonoBehaviour
         texto.color = letra;
         texto.text = mensaje;
 
-        this.gameObject.SetActive(false);
+        Ocultar();
+
+    }
+
+    public void Mostrar()
+    {
+        canvas.gameObject.SetActive(true);
+    }
+
+    public void Ocultar()
+    {
+        canvas.gameObject.SetActive(false);
+
     }
 }

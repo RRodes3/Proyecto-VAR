@@ -4,14 +4,19 @@ using UnityEngine.InputSystem;
 public class Pausa : MonoBehaviour
 {
     [Header("Mensaje")]
-    [SerializeField] GameObject mensaje;
+    [SerializeField] Mensaje_Control mensaje;
     [SerializeField] InputActionReference boton;
 
-    bool pausado;
+    bool pausado = false;
 
-    private void Start()
+    private void OnEnable()
     {
         boton.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        boton.action.Disable();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,7 +43,7 @@ public class Pausa : MonoBehaviour
         pausado = true;
         Time.timeScale = 0f;
 
-        mensaje.gameObject.SetActive(true);
+        mensaje.Mostrar();
     }
 
     private void Despausar()
@@ -46,6 +51,6 @@ public class Pausa : MonoBehaviour
         pausado = false;
         Time.timeScale = 1f;
 
-        mensaje.gameObject.SetActive(false);
+        mensaje.Ocultar();
     }
 }
