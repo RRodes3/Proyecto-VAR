@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &11400000
@@ -1118,7 +1118,6 @@ MonoBehaviour:
   - {fileID: -5437041782588951346}
   - {fileID: -3501836874656739362}
   - {fileID: -574477813939000835}
-  - {fileID: -3416931852441772772}
 --- !u!114 &25136653007256546
 MonoBehaviour:
   m_ObjectHideFlags: 0

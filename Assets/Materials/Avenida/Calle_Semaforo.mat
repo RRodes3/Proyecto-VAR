@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Calle_Semaforo
-  m_Shader: {fileID: -6465566751694194690, guid: 9d671127ae90cbd4088785fff39c30e6, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cb8cf13097f491746a1ee67dfebf3155, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -38,23 +38,24 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Dashed_Lines: 1.47
+    - _Dashed_Lines: 1.35
     - _Dashes_Count: 31.17
     - _Dashes_Ratio: 0.5
     - _Inner_Line_Width: 0.01
-    - _Inner_Lines_Distance: -0.06
+    - _Inner_Lines_Distance: -0.42
     - _Outer_Line_Distance: 0.46
     - _Outer_Line_Width: 0.01
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Road_smoothness: 0.051
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _Inner_Line_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Outer_Line_Color: {r: 1, g: 0.7294118, b: 0, a: 0}
     - _Road_Color: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &9020139695501777035
+--- !u!114 &8354235496050291775
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
