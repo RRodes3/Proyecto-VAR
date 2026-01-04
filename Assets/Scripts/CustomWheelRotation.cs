@@ -11,11 +11,10 @@ public class CustomWheelRotation : MonoBehaviour
     [SerializeField] Transform wheelCenter;
     [SerializeField] Transform rotationReference;
     [SerializeField] float epsilon = 0.0001f;
-
-    void Update()
-    {
-        if (rotationReference.parent != null) return; // Objeto no está agarrado
-
+    
+    void Update() {
+        if(rotationReference.parent != null) return; // Objeto no está agarrado
+        
         Vector3 OV = wheelCenter.position;
         Vector3 OR = rotationReference.position;
         Vector3 VR = OR - OV;
