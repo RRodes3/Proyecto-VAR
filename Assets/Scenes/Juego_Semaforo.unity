@@ -5739,7 +5739,11 @@ MonoBehaviour:
   wheelCenter: {fileID: 221382810}
   rotationReferenceLeft: {fileID: 1165047582}
   rotationReferenceRight: {fileID: 1317199607}
+  capsuleLeft: {fileID: 342592534}
+  capsuleRight: {fileID: 42455524}
   epsilon: 0.0001
+  normalMaterial: {fileID: 2100000, guid: 3422ff2f9f5b373468c7f995cf8161c3, type: 2}
+  selectedMaterial: {fileID: 2100000, guid: b19d9cf27a87072409ce1478026602d1, type: 2}
 --- !u!23 &1718261962
 MeshRenderer:
   m_ObjectHideFlags: 0
