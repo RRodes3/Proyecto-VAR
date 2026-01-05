@@ -1877,7 +1877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5712842346057940178, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.359
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 5712842346057940178, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1907,10 +1907,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7609419002152407499, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 863045275}
     - target: {fileID: 8721035097330598113, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
       propertyPath: boton
       value: 
@@ -3691,26 +3687,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mensaje
       objectReference: {fileID: 0}
-    - target: {fileID: 3453907564883228643, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 8.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3453907564883228643, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4345009709146960119, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: alto
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4345009709146960119, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: ancho
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4345009709146960119, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: mensaje
-      value: Esto es un semaforo indica cuando puedes  cruzar en una esquina.
-      objectReference: {fileID: 0}
     - target: {fileID: 5712842346057940178, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.583
@@ -3751,10 +3727,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7609419002152407499, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 863045275}
     - target: {fileID: 8721035097330598113, guid: 87adaa2c772f6eb4ebfaf83347bed99b, type: 3}
       propertyPath: boton
       value: 
