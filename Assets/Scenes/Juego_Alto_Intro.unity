@@ -3480,7 +3480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   wheelCenter: {fileID: 1020832654}
-  rotationReference: {fileID: 1167965920}
+  rotationReferenceLeft: {fileID: 1167965920}
+  rotationReferenceRight: {fileID: 1116044644}
   epsilon: 0.0001
 --- !u!23 &1481030084
 MeshRenderer:
