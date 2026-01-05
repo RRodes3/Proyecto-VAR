@@ -37,7 +37,7 @@ public class SemaforoNivelLogica : MonoBehaviour
             if(pierde) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             else {
                 Debug.Log("Pasa nivel!");
-                SceneManager.LoadScene(0);
+                Application.Quit();
             }
         }
     }
