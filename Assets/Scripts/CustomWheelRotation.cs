@@ -21,7 +21,7 @@ public class CustomWheelRotation : MonoBehaviour
 
         VR = Vector3.ProjectOnPlane(VR, wheelCenter.forward); // Proyectamos al plano dado por el volante
 
-        float finalRot = Mathf.Atan2(Vector3.Dot(wheelCenter.up, VR), Vector3.Dot(wheelCenter.right, VR)) * Mathf.Rad2Deg; // Entre -180 y 180 grados
+        float finalRot = Mathf.Atan2(Vector3.Dot(wheelCenter.up, VR) / 2f, Vector3.Dot(wheelCenter.right, VR)) * Mathf.Rad2Deg; // Entre -180 y 180 grados
         finalRot = -finalRot; // Mi rotación local va al revés
         if (finalRot <= 0f) finalRot += 360f;
         if (finalRot >= 360f) finalRot -= 360f;
