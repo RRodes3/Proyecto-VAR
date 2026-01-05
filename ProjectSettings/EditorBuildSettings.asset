@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/Men\xFA inicial.unity"
+    guid: 6aa1103f65a12934cb6e2efc3d72a689
+  - enabled: 1
     path: Assets/Scenes/Juego_Semaforo_Intro.unity
     guid: e17352c98e9287a409681183cbe02252
   - enabled: 1
@@ -17,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego_Alto.unity
     guid: 93e568eaf3533b242b3511cbeba86c83
-  - enabled: 1
-    path: "Assets/Scenes/Men\xFA inicial.unity"
-    guid: 6aa1103f65a12934cb6e2efc3d72a689
   - enabled: 1
     path: Assets/Scenes/Juego_CedaElPaso.unity
     guid: 003eafeb5a0a6a047a0e801a3ff64ba1
