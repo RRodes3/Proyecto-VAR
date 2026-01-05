@@ -12,14 +12,14 @@ public class TriggerBasicLogic : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
-        if(other.tag != "Player") return;
+        if(other.tag != "Player" && other.tag != "Carro") return;
 
         atLeastOneCollision = true;
         currentCollision = true;
     }
 
     void OnTriggerExit(Collider other) {
-        if(other.tag != "Player") return;
+        if(other.tag != "Player" && other.tag != "Carro") return;
 
         currentCollision = false;
     }
