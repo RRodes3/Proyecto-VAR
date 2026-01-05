@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/Men\xFA inicial.unity"
+    guid: 93ff56c213142ca4bbfb6fbd64c8c7d7
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Juego_Semaforo.unity
+    guid: 80410d685e3424542a59d201df49cf9c
+  - enabled: 1
+    path: Assets/Scenes/Juego_CedaElPaso.unity
+    guid: 003eafeb5a0a6a047a0e801a3ff64ba1
+  - enabled: 1
+    path: Assets/Scenes/Juego_Alto.unity
+    guid: 93e568eaf3533b242b3511cbeba86c83
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b038b602e4fa8fa47af3895474d2a12c, type: 2}
