@@ -21,7 +21,7 @@ public class Botonesmenú : MonoBehaviour
 
     public void Semaforo()
     {
-        SceneManager.LoadScene("Juego_Semaforo");
+        SceneManager.LoadScene("Juego_Semaforo_Intro");
     }
 
     public void Carriles()
@@ -31,7 +31,7 @@ public class Botonesmenú : MonoBehaviour
 
     public void SeñalAlto()
     {
-        SceneManager.LoadScene("Juego_Alto");
+        SceneManager.LoadScene("Juego_Alto_Intro");
     }
 
     public void Salir()
