@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class Botonesmenú : MonoBehaviour
 {
-    //Para hacer el commit de la rama o como se diga
     [Header("Canvas")]
     [SerializeField] GameObject principal;
     [SerializeField] GameObject niveles;
