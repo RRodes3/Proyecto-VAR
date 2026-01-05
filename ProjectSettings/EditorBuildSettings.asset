@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego_Semaforo.unity
     guid: 80410d685e3424542a59d201df49cf9c
+  - enabled: 1
+    path: Assets/Scenes/Juego_Alto_Intro.unity
+    guid: a94d2a660b8041b4f95f3f9f5f3ec351
+  - enabled: 1
+    path: Assets/Scenes/Juego_Alto.unity
+    guid: 93e568eaf3533b242b3511cbeba86c83
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b038b602e4fa8fa47af3895474d2a12c, type: 2}
