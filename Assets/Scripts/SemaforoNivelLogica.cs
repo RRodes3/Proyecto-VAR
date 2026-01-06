@@ -13,6 +13,9 @@ public class SemaforoNivelLogica : MonoBehaviour
     [SerializeField] GameObject luzAmarilla;
     [SerializeField] GameObject luzVerde;
 
+    [SerializeField] GameObject canvasGanar;
+    [SerializeField] GameObject canvasPerder;
+
     bool pierde = true;
     
     void Start() {
@@ -34,11 +37,21 @@ public class SemaforoNivelLogica : MonoBehaviour
         }
 
         if(finalDeJuegoTrigger.atLeastOneCollision) {
-            if(pierde) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            else {
-                SceneManager.LoadScene("Menú inicial");
-            }
+            if(pierde) StartCoroutine(Perder());
+            else StartCoroutine(Ganar());
         }
+    }
+
+    IEnumerator Ganar() {
+        canvasGanar.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("Menú inicial");
+    }
+
+    IEnumerator Perder() {
+        canvasPerder.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator Siga() {
