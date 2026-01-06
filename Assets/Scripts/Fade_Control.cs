@@ -13,7 +13,7 @@ public class Fade_Control : MonoBehaviour
         FadeIn();
     }
 
-    public void FadeIn()
+    public void FadeIn() 
     {
         StartCoroutine(FadeCanva(grupo, 1, 0, duración));
     }
