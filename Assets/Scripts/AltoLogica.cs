@@ -13,8 +13,7 @@ public class AltoLogica : MonoBehaviour
         if(areaEnd.atLeastOneCollision) {
             if(pierde) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             else {
-                Debug.Log("Pasa nivel!");
-                Application.Quit();
+                SceneManager.LoadScene("Menú inicial");
             }
         }
 

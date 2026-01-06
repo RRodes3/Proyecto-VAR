@@ -1,0 +1,2 @@
+C:\Users\Random Guy\Documents\Unity Projects\VAR\Final Proyect\Proyecto-VAR\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Random Guy\Documents\Unity Projects\VAR\Final Proyect\Proyecto-VAR\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

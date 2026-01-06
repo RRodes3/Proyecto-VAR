@@ -103,7 +103,7 @@ public class movimiento_carro : MonoBehaviour
             rigidBody.AddForce(movimiento, ForceMode.Force);
             
             float radianes = Mathf.Deg2Rad * giroRuedas;
-            float giroCarro = (velocidad / distanciaEntreEjes) * Mathf.Tan(radianes);
+            float giroCarro = (rigidBody.linearVelocity.magnitude / distanciaEntreEjes) * Mathf.Tan(radianes);
 
             // Debug.Log("GiroCarro: " + giroCarro);
 
