@@ -16,6 +16,8 @@ public class SemaforoNivelLogica : MonoBehaviour
     [SerializeField] GameObject canvasGanar;
     [SerializeField] GameObject canvasPerder;
 
+    [SerializeField] Fade_Control fade;
+
     bool pierde = true;
     
     void Start() {
@@ -44,12 +46,14 @@ public class SemaforoNivelLogica : MonoBehaviour
 
     IEnumerator Ganar() {
         canvasGanar.SetActive(true);
+        fade.FadeOut();
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("Menú inicial");
     }
 
     IEnumerator Perder() {
         canvasPerder.SetActive(true);
+        fade.FadeOut();
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
